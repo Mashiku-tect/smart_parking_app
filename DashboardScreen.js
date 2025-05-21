@@ -30,6 +30,7 @@ const DashboardScreen = ({ navigation, route }) => {
   const fetchParkingSlots = useCallback(async () => {
     try {
       const token = await AsyncStorage.getItem('token');
+      //new comment
 
       const response = await fetch('https://367d-197-186-6-199.ngrok-free.app/api/slots', {
         method: 'GET',
